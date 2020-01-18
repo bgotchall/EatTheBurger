@@ -23,3 +23,5 @@ otherthing: function(){
 },
 
 };
+
+module.exports= orm;
