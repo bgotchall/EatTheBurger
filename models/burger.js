@@ -10,3 +10,5 @@ var burger = {
   },
   otherthing: function(cb) {}
 };
+
+module.exports=burger;
