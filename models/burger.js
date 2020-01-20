@@ -14,6 +14,11 @@ var burger = {
     })
 
   },
+  update: function(condition,cb){
+    orm.update(condition,function(res){
+      cb(res);
+    })
+  },
   otherthing: function(cb) {}
 };
 
