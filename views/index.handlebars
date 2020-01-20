@@ -12,13 +12,13 @@
 
 <h2>burgers that are devoured!</h2>
 
-<ul>
+<table class="devouredTable">
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-devoured-block}}
     {{/if}}
   {{/each}}
-</ul>
+</table>
 
 <h2>Add a burger</h2>
 <form class="create-form">

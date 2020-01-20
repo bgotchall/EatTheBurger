@@ -1,0 +1,9 @@
+.devouredTable{
+    border-collapse: collapse;
+
+}
+
+.burgerCell{
+    border:grey solid 1px;
+    color: grey;
+}
