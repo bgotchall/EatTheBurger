@@ -12,3 +12,5 @@ router.get("/", function(req, res) {
   console.log(hbsObject);
   res.render("index", hbsObject);
 });
+
+module.exports=router;
