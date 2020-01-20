@@ -8,6 +8,12 @@ var burger = {
         cb(res);
       })
   },
+  create: function(data,cb){
+    orm.create(data,function(res){
+      cb(res);
+    })
+
+  },
   otherthing: function(cb) {}
 };
 
