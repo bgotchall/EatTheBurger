@@ -1,17 +1,17 @@
-var connection=require("connection.js");
+var connection=require("../config/connection.js");
 
 // selectAll()
 // insertOne()
 // updateOne()
 
-selectAll()
-insertOne()
-updateOne()
+// selectAll()
+// insertOne()
+// updateOne()
 
 var orm={
-selectAll: function(cb){
+all: function(cb){
 let queryString="SELECT * FROM burgers";
-connection.query(queryString,function(req,res){
+connection.query(queryString,function(err,res){
     if (err) {throw err;}
     else cb(res);
 });
