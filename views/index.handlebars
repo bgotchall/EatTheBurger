@@ -1,32 +1,47 @@
-<h1>Eat-Da_burger</h1>
+<div class="container-fluid">
+  <div class="row" id="top_row_with_icon">
+    <div class="col text-center" id="top_row">
+      <img src="/assets/img/food.svg" id="burger_pic">
+      <h1 id="top_headline">Eat-Da-Burger!</h1>
+    </div>
 
-<h2>burgers that are not eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-undevoured-block}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>burgers that are devoured!</h2>
-
-<table class="devouredTable">
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-devoured-block}}
-    {{/if}}
-  {{/each}}
-</table>
-
-<h2>Add a burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burger-box">burger Name:</label>
-    <input type="text" id="burger-box" name="name">
   </div>
 
-  <button type="submit">Submit!</button>
-</form>
+  <div class="row" id="main_content_row">
+    <div class=" col">
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-undevoured-block}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+
+    </div>
+    <div class="col">
+      <table class="devouredTable">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-devoured-block}}
+        {{/if}}
+        {{/each}}
+      </table>
+    </div>
+
+  </div>
+
+  <div class="row align-middle">
+    <div class="col footer align-middle">
+      <form class="create-form">
+
+        <div class="form-group">
+         
+          <input type="text" id="burger-box" name="name">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit!</button>
+      </form>
+      <h5>Enter a burger you want to eat and click the "Submit" button</h5>
+    </div>
+  </div>
+</div>

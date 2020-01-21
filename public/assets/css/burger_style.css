@@ -1,9 +1,42 @@
 .devouredTable{
     border-collapse: collapse;
-
 }
 
 .burgerCell{
     border:grey solid 1px;
     color: grey;
+    background-color: white;
+}
+
+#burger_pic{
+    height: 200px;
+}
+
+#top_headline{
+    color:red;
+}
+
+.container-fluid{
+    background-color: rgba(223, 177, 69, 0.787);
+}
+
+.undevouredBurgerBox{
+    background-color: white;
+    border: grey solid 1px;
+    width: 200px;
+    height: 50px;
+    margin:5px;
+}
+
+.devour-button{
+   height:30px;
+}
+
+.footer{
+    text-align: center;
+}
+
+#burger-box{
+    height:100px;
+    width:300px;
 }
