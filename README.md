@@ -4,6 +4,7 @@ An MVC full-stack app with Express, MySQL and handlebars.
 
 
 Developer notes: 
+Deployed address: https://secure-river-12289.herokuapp.com/
 
 Heroku instructions were at: 
 
